@@ -142,7 +142,7 @@ body {
 }
 
 mark {
-  background-color: transparent;
+  background-color: #F7F2EF;
   color: inherit;
 }
 
@@ -173,7 +173,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #F7F2EF;
 }
 
 body.is-preload *,
@@ -193,7 +193,7 @@ body,
 input,
 select,
 textarea {
-  color: #888;
+  color: #68615D;
   font-family: "Lato", sans-serif;
   font-size: 16pt;
   font-weight: 400;
@@ -220,12 +220,12 @@ a {
 
 a:hover {
   border-bottom-color: transparent;
-  color: #b8947c !important;
+  color: #f6f2f5 !important;
 }
 
 strong,
 b {
-  color: #777;
+  color: #77716D;
   font-weight: 700;
 }
 
@@ -236,6 +236,7 @@ i {
 
 p {
   margin: 0 0 2.25em 0;
+  text-align: justify;
 }
 
 h1,
@@ -244,7 +245,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #777;
+  color: #77716D;
   font-weight: 700;
   line-height: 1em;
   margin: 0 0 0.5625em 0;
@@ -318,7 +319,7 @@ blockquote {
 code {
   background: #555;
   border-radius: 5px;
-  color: #fff;
+  color: #F7F2EF;
   font-family: "Source Code Pro", monospace;
   font-size: 0.9em;
   margin: 0 0.25em;
@@ -340,15 +341,15 @@ pre code {
 }
 
 .align-left {
-  text-align: left;
+  text-align: justify;
 }
 
 .align-center {
-  text-align: center;
+  text-align: justify;
 }
 
 .align-right {
-  text-align: right;
+  text-align: justify;
 }
 
 /* Row */
@@ -1857,11 +1858,11 @@ pre code {
 
 section.special,
 article.special {
-  text-align: center;
+  text-align: justify;
 }
 
 header p {
-  color: #aaa;
+  color: #77716D;
   position: relative;
   margin: 0 0 1.6875em 0;
 }
@@ -1887,12 +1888,12 @@ header h6 + p {
 }
 
 header.major h2 {
-  color: #b8947c;
+  color: #C98F91;
   font-size: 3.5em;
 }
 
 header.major h2 + p {
-  color: #777;
+  color: #77716D;
   font-size: 1.75em;
   font-weight: 700;
   margin-top: -0.75em;
@@ -1905,7 +1906,7 @@ form {
 }
 
 label {
-  color: #777;
+  color: #77716D;
   display: block;
   font-size: 0.9em;
   font-weight: 700;
@@ -1950,7 +1951,7 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 select:focus,
 textarea:focus {
-  border-color: #b8947c;
+  border-color: #B98282;
 }
 
 select {
@@ -1964,12 +1965,12 @@ select {
 }
 
 select option {
-  color: #777;
-  background: #fff;
+  color:#77716D;
+  background: #F7F2EF;
 }
 
 select:focus::-ms-value {
-  background-color: transparent;
+  background-color: #F7F2EF;
 }
 
 select::-ms-expand {
@@ -2040,7 +2041,7 @@ input[type="radio"] + label:before {
   left: 0;
   line-height: 2.0625em;
   position: absolute;
-  text-align: center;
+  text-align: justify;
   top: 0;
   width: 2.0625em;
 }
@@ -2055,7 +2056,7 @@ input[type="radio"]:checked + label:before {
 
 input[type="checkbox"]:focus + label:before,
 input[type="radio"]:focus + label:before {
-  border-color: #b8947c;
+  border-color: #B98282;
 }
 
 input[type="checkbox"] + label:before {
@@ -2442,7 +2443,7 @@ ul.actions.fit.stacked {
     -ms-flex-shrink: 1;
     flex-shrink: 1;
     padding: 1.125em 0 0 0;
-    text-align: center;
+    text-align: justify;
     width: 100%;
   }
 
@@ -2502,7 +2503,8 @@ ul.feature-icons li:before {
 }
 
 ul.feature-icons li:before {
-  background: #b8947c;
+  background: #B98282;
+;
   border-radius: 100%;
   color: #ffffff;
   display: block;
@@ -2563,7 +2565,7 @@ table td {
 }
 
 table th {
-  color: #777;
+  color: #77716D;
   font-size: 0.9em;
   font-weight: 700;
   padding: 0 0.75em 0.75em 0.75em;
@@ -2636,7 +2638,7 @@ input[type="button"],
   height: 2.75em;
   line-height: 2.75em;
   padding: 0 1.5em;
-  text-align: center;
+  text-align: justify;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -2697,7 +2699,7 @@ input[type="button"].alt,
 .button.alt {
   background-color: transparent;
   box-shadow: inset 0 0 0 2px #e4e4e4;
-  color: #777 !important;
+  color: #77716D !important;
 }
 
 input[type="submit"].alt:hover,
@@ -2705,7 +2707,7 @@ input[type="reset"].alt:hover,
 input[type="button"].alt:hover,
 .button.alt:hover {
   background-color: #f4f4f4;
-  color: #777 !important;
+  color: #77716D !important;
 }
 
 input[type="submit"].alt:active,
@@ -2726,7 +2728,8 @@ input[type="submit"].primary,
 input[type="reset"].primary,
 input[type="button"].primary,
 .button.primary {
-  background-color: #b8947c;
+  background-color: #B98282; 
+;
   color: #ffffff !important;
 }
 
@@ -2809,12 +2812,12 @@ input[type="button"]:disabled,
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-  background: #b8947c;
-  color: #eadfd8;
+  background: #D9C9BC;
+  color: #514A46;
   height: 100%;
   overflow-y: auto;
   position: fixed;
-  text-align: center;
+  text-align: justify;
   top: 0;
   width: 23em;
   right: 0;
@@ -2826,7 +2829,7 @@ input[type="button"]:disabled,
 #header h4,
 #header h5,
 #header h6 {
-  color: #ffffff;
+  color: #514A46;
 }
 
 #header h1 a,
@@ -2835,11 +2838,11 @@ input[type="button"]:disabled,
 #header h4 a,
 #header h5 a,
 #header h6 a {
-  color: #ffffff;
+  color: #514A46;
 }
 
 #header header p {
-  color: #5c4a3e;
+  color: #eadfd8;
 }
 
 #header a {
@@ -2870,7 +2873,7 @@ input[type="button"]:disabled,
 }
 
 #header > header p {
-  color: #eadfd8;
+  color: #514A46;
   font-style: italic;
   margin: 1em 0 0 0;
 }
@@ -2891,7 +2894,7 @@ input[type="button"]:disabled,
 }
 
 #header > footer .icons li a {
-  color: #5c4a3e;
+  color: #B98282;
 }
 
 #header > nav {
@@ -2908,7 +2911,7 @@ input[type="button"]:disabled,
 }
 
 #header > nav ul li {
-  border-top: solid 2px #937663;
+  border-top: solid 2px #D9C9BC;
   display: block;
   padding: 0;
 }
@@ -2919,15 +2922,15 @@ input[type="button"]:disabled,
   -ms-transition: none;
   transition: none;
   border: 0;
-  color: #ffffff !important;
+  color: #514A46 !important;
   display: block;
   padding: 0.85em 0;
   text-decoration: none;
 }
 
 #header > nav ul li a.active {
-  background: #fff;
-  color: #b8947c !important;
+  background: #ffffff;
+  color: #D9C9BC; !important;
 }
 
 #header > nav ul li:first-child {
@@ -3202,15 +3205,15 @@ input[type="button"]:disabled,
   }
 
   #titleBar .toggle:before {
-    background: #b8947c;
-    color: #ffffff;
+    background: #fffeff;
+    color: #514A46;
     content: "\f0c9";
     display: block;
     font-size: 18px;
     height: 44px;
     line-height: 44px;
     position: absolute;
-    text-align: center;
+    text-align: justify;
     top: 0;
     width: 64px;
     right: 0;
@@ -3348,7 +3351,7 @@ input[type="button"]:disabled,
   /* Footer */
 
   #footer {
-    text-align: center;
+    text-align: justify;
   }
 
   #footer .copyright li {
@@ -3410,7 +3413,7 @@ input[type="button"]:disabled,
   ul.actions li {
     display: block;
     padding: 1.125em 0 0 0;
-    text-align: center;
+    text-align: justify;
     width: 100%;
   }
 
