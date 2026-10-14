@@ -2913,7 +2913,6 @@ input[type="button"]:disabled,
 #header > nav ul li {
   border-top: solid 2px #D9C9BC;
   display: block;
-  padding: 0;
 }
 
 #header > nav ul li a {
@@ -2924,11 +2923,11 @@ input[type="button"]:disabled,
   border: 0;
   color: #514A46 !important;
   display: block;
-  padding: 0.85em 0;
+  padding: 1;
   text-decoration: none;
 }
 
-#header > nav ul li a.active {
+#header > nav ul li.active {
   background: #ffffff;
   color: #D9C9BC; !important;
 }
