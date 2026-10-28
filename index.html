@@ -5,6 +5,11 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+  <link rel="stylesheet" href="assets/css/main.css" />
+<style>
+  .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+</style>
   <head>
     <title>Katherine Brien</title>
     <meta charset="utf-8" />
@@ -27,7 +32,7 @@
       </header>
       <nav id="nav">
         <ul>
-          <li class="active"><a href="#one">À propos</a></li>
+          <li><a class="active"><a href="#one">À propos</a></li>
           <li><a href="#two">Mon travail</a></li>
           <li><a href="#three">Mon CV</a></li>
           <li><a href="#four">Contact</a></li>
@@ -47,13 +52,13 @@
             >
           </li>
           <li>
-            <a href="https://github.com/KatherineBrien/katherinebrien.github.io.git" class="icon brands fa-github"
-              ><span class="label">https://github.com/KatherineBrien/katherinebrien.github.io.git</span></a
+            <a href="https://github.com/KatherineBrien/" class="icon brands fa-github"
+              ><span class="label">https://github.com/KatherineBrien/t</span></a
             >
           </li>
           <li>
-            <a href="mailto:katherine.brien15@email.com" class="icon solid fa-envelope"
-              ><span class="label">katherine.brien15@gmail.com</span></a
+            <a href="mailto:katherinebrien15@email.com" class="icon solid fa-envelope"
+              ><span class="label">katherinebrien15@gmail.com</span></a
             >
           </li>
         </ul>
@@ -72,97 +77,250 @@
           <div class="container">
             <header class="major">
               <h2>Katherine Brien</h2>
-              <p>Curieuse du monde, tournée vers l’avenir.</p>
+              <p> <span id="typed"></span><span class="cursor">|</span></p>
+              <script>
+  (function () {
+    const mots = ["Développement des affaires", "Passionnée par l'international", "Voyageuse", "Curieuse", "Femme d'ambition"];
+    const cible = document.getElementById('typed');
+    let i = 0, j = 0, efface = false;
+    function taper() {
+      cible.textContent = mots[i].slice(0, j);
+      if (!efface && j === mots[i].length) { efface = true; return setTimeout(taper, 1500); }
+      if (efface && j === 0) { efface = false; i = (i + 1) % mots.length; }
+      j += efface ? -1 : 1;
+      setTimeout(taper, efface ? 40 : 90);
+    }
+    taper();
+  })();
+</script>
             </header>
             <p>
-               Katherine Brien est une personne curieuse, passionnée et ambitieuse, qui aime profondément apprendre, découvrir et comprendre le monde qui l’entoure. Elle s’intéresse particulièrement aux relations internationales, à la politique, à l’histoire et aux différentes cultures, tout en ayant un intérêt marqué pour les enjeux de société et les grandes transformations qui façonnent notre monde.
-
-Amoureuse des voyages et de la découverte, elle aime rencontrer de nouvelles personnes, échanger avec des gens aux parcours différents et sortir de sa zone de confort. Elle apprécie également les moments simples du quotidien, les découvertes culinaires, les activités sportives et le plein air.
-
-Toujours à la recherche de nouveaux défis, Katherine est animée par le désir d’évoluer, de repousser ses limites et de donner un sens à son parcours. Après un MBA en commerce international, elle poursuit actuellement une deuxième maîtrise en études internationales avec mémoire à l’Université Laval, portée par son intérêt pour les enjeux qui dépassent les frontières.
-
-Curieuse de nature et tournée vers l’avenir, elle souhaite construire un parcours qui lui permettra de réunir ses différentes passions : l’international, les relations humaines, la découverte, le leadership et la volonté de contribuer positivement à la société.
+               Depuis toujours, j’ai besoin de comprendre le monde qui m’entoure. Cette curiosité m’a menée vers les relations internationales, la politique, l’histoire et les cultures, mais aussi sur la route, à la rencontre de gens aux parcours très différents du mien. J’aime sortir de ma zone de confort, relever de nouveaux défis et apprendre de chaque expérience. Entre deux projets, vous me trouverez probablement en plein air, en train de bouger ou de découvrir une nouvelle table. Mon objectif : bâtir un parcours qui réunit l’international, les relations humaines et le leadership, avec la volonté de contribuer positivement à la société.
             </p>
           </div>
         </section>
 
         <!-- Two -->
-        <section id="two">
-          <div class="container">
-            <h3>Mes réalisations</h3>
-            <p>
-L’une de mes plus grandes réalisations est d’avoir construit un parcours académique et professionnel guidé par ma curiosité pour le monde. Après avoir complété un MBA en commerce international, j’ai choisi de poursuivre une deuxième maîtrise en études internationales avec mémoire à l’Université Laval. Ce parcours représente ma volonté de continuer à apprendre, de développer ma réflexion et de mieux comprendre les enjeux qui façonnent notre monde.
+<section id="two">
+  <div class="container">
+    <h3>Mes réalisations</h3>
+    <p class="intro-realisations">
+      Quatre expériences qui racontent qui je suis : la curiosité qui me pousse à partir,
+      l’envie d’apprendre, le plaisir de transmettre et la volonté de contribuer
+      aux transformations de notre époque.
+    </p>
 
-Pour moi, cette réalisation ne se résume pas à des diplômes : elle représente surtout ma détermination à sortir de ma zone de confort, à relever de nouveaux défis et à transformer mes passions en projets concrets.
-            </p>
-            <ul class="feature-icons">
-              <li class="icon solid fa-plane">
-                <p>
-                  Voyager est l’une de mes plus grandes passions et une expérience qui a profondément façonné la personne que je suis. Découvrir de nouveaux pays, de nouvelles cultures et des façons de vivre différentes m’a appris à être plus ouverte, autonome et curieuse.
+    <ul class="feature-icons realisations">
 
-Chaque voyage représente pour moi bien plus qu’une destination : c’est une occasion de sortir de ma zone de confort, de faire de nouvelles rencontres et de voir le monde sous un autre regard. Cette passion pour la découverte nourrit encore aujourd’hui mon intérêt pour l’international et mon désir de continuer à explorer le monde.
-                </p>
+      <li   class="icon solid fa-plane">
+        <h4>Explorer le monde</h4>
+        <p>
+          Voyager a profondément façonné la personne que je suis. Découvrir de nouveaux pays,
+          de nouvelles cultures et d’autres façons de vivre m’a rendue plus ouverte, autonome
+          et curieuse. Chaque voyage est pour moi une occasion de sortir de ma zone de confort,
+          de faire des rencontres et de voir le monde sous un autre regard. Cette passion nourrit
+          encore aujourd’hui mon intérêt pour l’international.
+        </p>
+      </li>
 
-              </li>
-              <li class="icon solid fa-spa">
-                <p>
-                  Devenir professeure de Pilates représente pour moi bien plus qu’une formation : c’est une façon de transmettre une passion pour le mouvement, le bien-être et l’équilibre. Cette expérience m’a appris à être attentive aux autres, à comprendre les besoins de chacun et à accompagner les personnes dans leur progression.
+      <li   class="icon solid fa-graduation-cap">
+        <h4>Un parcours guidé par la curiosité</h4>
+        <p>
+          Après un MBA en commerce international, j’ai choisi de poursuivre une deuxième maîtrise
+          en études internationales avec mémoire à l’Université Laval. Plus que des diplômes,
+          ce parcours représente ma détermination à continuer d’apprendre, à relever de nouveaux
+          défis et à mieux comprendre les enjeux qui façonnent notre monde.
+        </p>
+      </li>
 
-Le Pilates occupe une place importante dans ma vie puisqu’il combine plusieurs valeurs qui me tiennent à cœur : la discipline, la concentration, le dépassement de soi et l’équilibre entre le corps et l’esprit.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </section>
+      <li   class="icon solid fa-spa">
+        <h4>Enseigner le Pilates</h4>
+        <p>
+          Devenir professeure de Pilates, c’est transmettre une passion pour le mouvement,
+          le bien-être et l’équilibre. Cette expérience m’a appris à être attentive aux autres,
+          à comprendre les besoins de chacun et à accompagner les personnes dans leur progression,
+          avec discipline, concentration et bienveillance.
+        </p>
+      </li>
+
+      <li   class="icon solid fa-bolt">
+        <h4>Électrifier l'avenir</h4>
+        <p>
+          Chez AXSO, je participe à l’électrification des transports en bâtissant des partenariats
+          dans l’écosystème de la recharge des véhicules électriques. Ce rôle me permet de réunir
+          ce qui m’anime : les relations humaines, le développement des affaires et l’envie de
+          contribuer concrètement aux industries de demain.
+        </p>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<style>
+  #two .intro-realisations {
+    max-width: 42em;
+    margin-bottom: 3em;
+  }
+
+  #two .realisations li {
+    margin-bottom: 2.5em;
+  }
+
+  #two .realisations h4 {
+    margin: 0 0 0.6em 0;
+    font-size: 1.1em;
+    color: #b98a8f;
+  }
+
+  #two .realisations p {
+    margin: 0;
+    line-height: 1.75;
+    text-align: justify;
+  }
+
+  @media screen and (max-width: 736px) {
+    #two .realisations li {
+      margin-bottom: 2em;
+    }
+  }
+</style>
+            
 
         <!-- Three -->
-        <section id="three">
-          <div class="container">
-            <h3>Mon CV</h3>
-            <p>
-              Mon parcours combine le développement des affaires internationales, l’administration et les relations internationales. Titulaire d’un MBA en Global Business et actuellement candidate à la maîtrise en études internationales à l’Université Laval, je m’intéresse au commerce international, à la diplomatie économique et au développement de marchés.
-            </p>
-            <div class="features">
-              <article>
-                <a href="#" class="image"
-                  ><img src="images/IMG_8643.jpeg" alt=""
-                /></a>
-                <div class="inner">
-                  <h4>Développement des affaires à l’international</h4>
-                 <ul>
-    <li>Développement de marchés au Canada, aux États-Unis, en Asie, au Moyen-Orient et en Océanie.</li>
-    <li>Négociation commerciale et gestion de partenariats stratégiques.</li>
-    <li>Coordination de missions commerciales entre le Canada et le Mexique.</li>
-    <li>Analyse des marchés étrangers et identification de nouvelles occasions d'affaires.</li>
-</ul>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
+      <section id="three">
+  <div class="container">
+    <h3>Mon CV</h3>
+    <p class="intro-cv">
+      Mon parcours réunit le développement des affaires internationales, l’administration
+      et les relations internationales. Titulaire d’un MBA en commerce international et
+      candidate à la maîtrise en études internationales à l’Université Laval, je m’intéresse
+      au commerce international, à la diplomatie économique et au développement de marchés.
+    </p>
 
+    <div class="features">
+
+      <article>
+        <a href="#" class="image">
+          <img src="images/IMG_8643.jpeg" alt="Katherine Brien lors d’une mission d’affaires" />
+        </a>
+        <div class="inner">
+          <h4> Expérience en développement des affaires à l’international</h4>
+          <ul class="liste-cv">
+            <li>Développement de marchés au Canada, aux États-Unis, en Asie, au Moyen-Orient et en Océanie.</li>
+            <li>Négociation commerciale et gestion de partenariats stratégiques.</li>
+            <li>Coordination de missions commerciales entre le Canada et le Mexique.</li>
+            <li>Analyse des marchés étrangers et repérage de nouvelles occasions d’affaires.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article>
+        <a href="#" class="image">
+          <img src="images/AXSO-social-02.png" alt="Borne de recharge pour véhicules électriques" />
+        </a>
+        <div class="inner">
+          <h4>Emploi actuel: Représentante au développement des affaires, AXSO</h4>
+          <ul class="liste-cv">
+            <li>Développement de partenariats dans l’écosystème de la recharge des véhicules électriques Nord-Américaine.</li>
+            <li>Prospection et création de nouvelles occasions d’affaires.</li>
+            <li>Accompagnement des clients dans leurs projets d’électrification.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article>
+        <a href="#" class="image">
+          <img src="images/laval.jpg" alt="Université Laval" />
+        </a>
+        <div class="inner">
+          <h4>Formation</h4>
+          <ul class="liste-cv">
+            <li>Maîtrise en études internationales avec mémoire, Université Laval (2026 - aujourd'hui).</li>
+            <li>Microprogramme de deuxième cycle en affaires diplomatique et stratégiques, Université Laval.(2025-2026)</li>
+            <li>MBA en commerce international, Université Laval.(2022 - 2024)</li>
+            <li>Baccalauréat en politique appliquée, Université de Sherbrooke (2019 - 2022)</li>
+            <li>Certification de professeure de Pilates.(2026)</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+    <ul class="actions">
+      <li><a href="documents/CV-Katherine-Brien.pdf" class="button" download>Télécharger mon CV</a></li>
+    </ul>
+  </div>
+</section>
+
+<style>
+  #three .intro-cv {
+    text-align: justify;
+    hyphens: auto;
+    margin-bottom: 3em;
+  }
+
+  #three .liste-cv {
+    margin: 0;
+    padding-left: 1.2em;
+  }
+
+  #three .liste-cv li {
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+  }
+
+  #three .inner h4 {
+    color: #B98282;
+  }
+
+  /* Bouton Télécharger mon CV */
+  #three .actions .button {
+    background-color: #B98282!important;
+    border-color: #B98282 !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+  }
+
+  #three .actions .button:hover {
+    background-color: #a5767b !important;
+    border-color: #a5767b !important;
+  }
+</style>
         <!-- Four -->
         <section id="four">
           <div class="container">
             <h3>Me joindre</h3>
-            <p>
-              Un projet, une idée ou simplement l’envie d’échanger? Parlons-en.
-              Un projet, une idée ou simplement l’envie d’échanger? Parlons-en.
-            </p>
-            <div class="row gtr-uniform">
-              <div class="col-12">
-                <!-- Vous pouvez mettre votre email ici au lieu de katherinebrien15@gmail.com -->
-                <!-- Vous pouvez mettre votre email ici au lieu de katherinebrien15@gmail.com -->
-                <a
-                  href="mailto:katherinebrien15@gmail.com?subject=Sujet&body=Votre message ici."
-                  class="button primary"
-                >
-                  Envoyer un email
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+<p>
+  Un projet, une idée ou simplement l’envie d’échanger ? Parlons-en.
+</p>
+<div class="row gtr-uniform">
+  <div class="col-12">
+    <a
+      href="mailto:katherinebrien15@gmail.com?subject=Prise%20de%20contact"
+      class="button primary bouton-contact"
+    >
+      Envoyer un courriel
+    </a>
+  </div>
+</div>
+</div>
+</section>
+
+<style>
+  /* Bouton Envoyer un courriel */
+  .bouton-contact {
+    background-color: #b98a8f !important;
+    border-color: #b98a8f !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+  }
+
+  .bouton-contact:hover {
+    background-color: #a5767b !important;
+    border-color: #a5767b !important;
+  }
+</style>
         <!-- Five -->
         <!-- -->
       </div>
@@ -186,6 +344,18 @@ Le Pilates occupe une place importante dans ma vie puisqu’il combine plusieurs
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <div class="stats">
+</div>
+  </body>
+</html>
+  <!-- Ton animation -->
+    <script>
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => e.isIntersecting && e.target.classList.add('visible'));
+      }, { threshold: 0.15 });
+      document.querySelectorAll('.container, .feature-icons li, article')
+        .forEach(el => { el.classList.add('reveal'); obs.observe(el); });
+    </script>
   </body>
 </html>
 
