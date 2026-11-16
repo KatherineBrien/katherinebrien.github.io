@@ -1,0 +1,197 @@
+%-------------------------
+% Rezume, a latex resume template for developers
+% Author : Nanu Panchamurthy
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%-------------------------
+
+%------------PACKAGES----------------
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{verbatim}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{latexsym}
+\usepackage{marvosym}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage[normalem]{ulem}
+\usepackage[french]{babel}
+%-----------------------------------------
+
+\input glyphtounicode
+\pdfgentounicode=1
+
+%----------FONT OPTIONS-------------------
+\usepackage[default]{sourcesanspro}
+\urlstyle{same}
+%-----------------------------------------
+
+%----------MARGIN OPTIONS-----------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0in}
+\renewcommand{\footrulewidth}{0in}
+\setlength{\tabcolsep}{0in}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\textheight}{1.0in}
+\raggedbottom{}
+\raggedright{}
+%------------------------------------------
+
+%--------SECTIONING COMMANDS---------
+\titleformat{\section}
+  {\scshape\large}{}
+    {0em}{\color{black}}[\color{black}\titlerule\vspace{0pt}]
+%-------------------------------------
+
+%--------REDEFINITIONS----------------
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\ULdepth}{2pt}
+%-------------------------------------
+
+%--------CUSTOM COMMANDS--------------
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[rightmargin=0.11in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\newcommand{\resumeSectionType}[3]{
+  \item\begin{tabular*}{0.96\textwidth}[t]{
+    p{0.15\linewidth}p{0.02\linewidth}p{0.81\linewidth}
+  }
+    \textbf{#1} & #2 & #3
+  \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeTrioHeading}[3]{
+  \item\small{
+    \begin{tabular*}{0.96\textwidth}[t]{
+      l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r
+    }
+      \textbf{#1} & \textit{#2} & #3
+    \end{tabular*}
+  }
+}
+
+\newcommand{\resumeQuadHeading}[4]{
+  \item
+  \begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}
+}
+
+\newcommand{\resumeQuadHeadingChild}[2]{
+  \item
+  \begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\small#1} & {\small#2} \\
+  \end{tabular*}
+}
+
+\newcommand{\resumeHeadingListStart}{
+  \begin{itemize}[leftmargin=0.15in, label={}]
+}
+\newcommand{\resumeHeadingListEnd}{\end{itemize}}
+%-------------------------------------------
+
+
+%__________________CV____________________
+\begin{document}
+
+%-----------COORDONNÉES------------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Huge Katherine Brien \vspace{2pt}} &
+  Québec (Québec) \\
+  \href{https://linkedin.com/in/katherine-brien}{\uline{linkedin.com/in/katherine-brien}} &
+  Courriel : \href{mailto:katherinebrien15@gmail.com}{\uline{katherinebrien15@gmail.com}} $|$
+  Tél. : 450 531-6921 \\
+\end{tabular*}
+%--------------------------------------------
+
+
+%-----------FORMATION-------------------------
+\section{Formation}
+  \resumeHeadingListStart{}
+    \resumeQuadHeading{Université Laval, École supérieure d'études internationales}{Québec, QC}
+    {Maîtrise en études internationales}{2026 -- présent}
+      \resumeItemListStart{}
+        \resumeItem{Projet de mémoire : \textbf{leadership féminin} et \textbf{gouvernance du commerce international} (OMC, CNUCED, ITC)}
+      \resumeItemListEnd{}
+
+    \resumeQuadHeading{Université Laval}{Québec, QC}
+    {Microprogramme en affaires diplomatiques et stratégiques}{2025 -- 2026}
+
+    \resumeQuadHeading{Université Laval}{Québec, QC}
+    {MBA -- Global Business}{2022 -- 2024}
+
+    \resumeQuadHeading{Université de Sherbrooke}{Sherbrooke, QC}
+    {Baccalauréat en politique appliquée, cheminement relations internationales}{2019 -- 2022}
+  \resumeHeadingListEnd{}
+%---------------------------------------------
+
+
+%-----------EXPÉRIENCE-----------------------
+\section{Expérience professionnelle}
+\resumeHeadingListStart{}
+  \resumeQuadHeading{Axso}{Québec, QC}
+  {Représentante au développement des affaires}{2026 -- présent}
+    \resumeItemListStart{}
+      \resumeItem{Prospecte et ouvre de \textbf{nouveaux marchés} pour l'entreprise}
+      \resumeItem{Identifie et qualifie des clients potentiels et assure le suivi des occasions d'affaires dans \textbf{Microsoft Dynamics 365 Sales}}
+      \resumeItem{Prépare et présente des \textbf{propositions commerciales} adaptées aux besoins des clients}
+      \resumeItem{Établit et entretient des \textbf{partenariats stratégiques} avec des clients et partenaires}
+      \resumeItem{Accompagne les clients et contribue à la \textbf{croissance des ventes} et au rayonnement de l'entreprise}
+    \resumeItemListEnd{}
+
+  \resumeQuadHeading{Palmex International}{Saint-Sauveur, QC}
+  {Représentante commerciale -- Asie, Moyen-Orient et Océanie}{2025 -- 2026}
+    \resumeItemListStart{}
+      \resumeItem{Développé et géré les \textbf{marchés internationaux} de trois grandes régions}
+      \resumeItem{Soutenu stratégiquement le \textbf{réseau de distributeurs} : outils de vente, suivi de la performance et plans d'action}
+      \resumeItem{Analysé les tendances et les \textbf{exigences réglementaires} des marchés cibles pour orienter la stratégie d'exportation}
+      \resumeItem{\textbf{Négocié des ententes commerciales} et assuré le suivi des commandes avec l'équipe logistique}
+      \resumeItem{Stimulé la croissance des ventes et renforcé le \textbf{positionnement de la marque}}
+    \resumeItemListEnd{}
+
+  \resumeQuadHeading{Mission commerciale, Université Laval}{Québec, QC}
+  {Agente de développement -- Canada et Mexique}{2023 -- 2024}
+    \resumeItemListStart{}
+      \resumeItem{Recherché et qualifié des \textbf{entreprises cibles} au Canada et au Mexique}
+      \resumeItem{Préparé des profils d'entreprises et des dossiers d'information pour les participants de la mission}
+      \resumeItem{Coordonné les \textbf{rencontres d'affaires} entre entreprises québécoises et partenaires étrangers}
+      \resumeItem{Assuré la logistique et le suivi des rencontres après la mission}
+      \resumeItem{Mené des démarches de \textbf{développement des affaires à l'international}}
+    \resumeItemListEnd{}
+
+  \resumeQuadHeading{Perspective Monde}{Sherbrooke, QC}
+  {Stagiaire en marketing et communication}{2021}
+    \resumeItemListStart{}
+      \resumeItem{Créé des contenus publicitaires et des messages Web}
+      \resumeItem{Rédigé et mis en ligne des contenus pour le site Web et les plateformes numériques}
+      \resumeItem{Répondu aux courriels et aux demandes des clients en ligne}
+      \resumeItem{Participé aux réunions de l'équipe marketing et proposé des idées de contenus}
+    \resumeItemListEnd{}
+\resumeHeadingListEnd{}
+%---------------------------------------------
+
+
+%--------------COMPÉTENCES------------------------
+\section{Compétences et langues}
+  \resumeHeadingListStart{}
+    \resumeSectionType{Langues}{:}{Français (langue maternelle), anglais (niveau professionnel)}
+    \resumeSectionType{Expertise}{:}{Analyse de stratégies de développement, normes du commerce international, gestion de partenariats, expansion de marchés}
+    \resumeSectionType{Informatique}{:}{Microsoft 365, Microsoft Dynamics 365 Sales, Teams, Zoom, outils d'IA (Copilot, ChatGPT, Gemini)}
+  \resumeHeadingListEnd{}
+%--------------------------------------------
+
+\end{document}
